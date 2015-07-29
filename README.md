@@ -1,7 +1,7 @@
 SublimeLinter-contrib-jade-lint
 ================================
 
-[![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-jade-lint.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-jade-lint)
+[![Build Status](https://travis-ci.org/benedfit/SublimeLinter-contrib-jade-lint.svg?branch=master)](https://travis-ci.org/benedfit/SublimeLinter-contrib-jade-lint)
 
 This linter plugin for [SublimeLinter][docs] provides an interface to [jade-lint](https://github.com/benedfit/jade-lint). It will be used with files that have the “jade” syntax.
 
