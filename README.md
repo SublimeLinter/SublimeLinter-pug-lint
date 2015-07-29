@@ -37,7 +37,7 @@ To install via Package Control, do the following:
 ## Settings
 For general information on how SublimeLinter works with settings, please see [Settings][settings]. For information on generic linter settings, please see [Linter Settings][linter-settings].
 
-You can configure jade-lint options in the way you would from the command line, with `.jade-lintrc` files. For more information, see the jade-lint docs. The linter plugin does this by searching for a `.jade-lintrc` file in your stylus file’s current directory tree. If you are an OSX / Linux user, you can also set a global `.jade-lintrc` in your User (`~`) directory.
+You can configure jade-lint options in the way you would from the command line, with `.jade-lintrc` files. For more information, see the [jade-lint docs](https://github.com/benedfit/jade-lint#configuration-file). The linter plugin does this by searching for a `.jade-lintrc` file in your stylus file’s current directory tree. If you are an OSX / Linux user, you can also set a global `.jade-lintrc` in your User (`~`) directory.
 
 You may provide a custom config file by setting the linter’s `"args"` setting to `["--config", "/path/to/file"]`. On Windows, be sure to double the backslashes in the path, for example `["--config", "C:\\Users\\Name\\jade-lint.conf"]`.
 
