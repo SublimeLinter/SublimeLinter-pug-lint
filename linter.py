@@ -22,7 +22,7 @@ class JadeLint(Linter):
     executable = None
     version_args = '--version'
     version_re = r'(?P<version>\d+\.\d+\.\d+)'
-    version_requirement = '>= 0.0.1'
+    version_requirement = '>= 0.0.2'
     regex = r''
     multiline = False
     line_col_base = (1, 1)
