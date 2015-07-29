@@ -15,7 +15,7 @@ Before using this plugin, you must ensure that `jade-lint` is installed on your 
 
 1. Install `jade-lint` by typing the following in a terminal:
    ```
-   <package manager> install jade-lint
+   npm install -g jade-lint
    ```
 
 
@@ -38,12 +38,11 @@ To install via Package Control, do the following:
 ## Settings
 For general information on how SublimeLinter works with settings, please see [Settings][settings]. For information on generic linter settings, please see [Linter Settings][linter-settings].
 
-In addition to the standard SublimeLinter settings, SublimeLinter-contrib-jade-lint provides its own settings. Those marked as “Inline Setting” or “Inline Override” may also be [used inline][inline-settings].
+You can configure jade-lint options in the way you would from the command line, with `.jade-lintrc` files. For more information, see the jade-lint docs. The linter plugin does this by searching for a `.jade-lintrc` file in your stylus file’s current directory tree. If you are an OSX / Linux user, you can also set a global `.jade-lintrc` in your User (`~`) directory.
 
-|Setting|Description|Inline Setting|Inline Override|
-|:------|:----------|:------------:|:-------------:|
-|foo|Something.|&#10003;| |
-|bar|Something else.| |&#10003;|
+You may provide a custom config file by setting the linter’s `"args"` setting to `["--config", "/path/to/file"]`. On Windows, be sure to double the backslashes in the path, for example `["--config", "C:\\Users\\Name\\jade-lint.conf"]`.
+
+The path to the `.jade-lintrc` file is cached, meaning if you create a new .jade-lintrc that should have precedence over the previous one (meaning it is closer to the .jade file) you need to clear the cache for the linter to use the new `.jade-lintrc` You can clear the cache by going to: Tools > SublimeLinter > Clear Caches.
 
 ## Contributing
 If you would like to contribute enhancements or fixes, please do the following:
