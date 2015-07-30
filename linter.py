@@ -36,4 +36,3 @@ class JadeLint(NodeLinter):
     # inline_overrides = None
     # comment_re = None
     config_file = ('--config', '.jade-lintrc', '-')
-
