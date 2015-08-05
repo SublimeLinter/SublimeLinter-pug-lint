@@ -18,7 +18,7 @@ Before using this plugin, you must ensure that `jade-lint` is installed on your 
    npm install -g jade-lint
    ```
 
-**Note:** This plugin requires `jade-lint` 1.0.0 or later.
+**Note:** This plugin requires `jade-lint` 1.2.1 or later.
 
 ### Linter configuration
 In order for `jade-lint` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
