@@ -10,7 +10,7 @@
 
 """This module exports the JadeLint plugin class."""
 
-from SublimeLinter.lint import NodeLinter, util
+from SublimeLinter.lint import NodeLinter, util, highlight
 
 
 class JadeLint(NodeLinter):
@@ -29,5 +29,5 @@ class JadeLint(NodeLinter):
     tempfile_suffix = 'jade'
     error_stream = util.STREAM_BOTH
     config_file = ('--config', '.jade-lintrc', '.jade-lint.json', '~')
-    defaults = { '--reporter=': 'inline' }
+    defaults = {'--reporter=': 'inline'}
     default_type = highlight.WARNING
