@@ -23,7 +23,7 @@ class JadeLint(NodeLinter):
     executable = None
     version_args = '--version'
     version_re = r'(?P<version>\d+\.\d+\.\d+)'
-    version_requirement = '>= 1.2.1'
+    version_requirement = '>= 2.0.0'
     regex = r'^.+?:(?P<line>\d+)(:(?P<col>\d+) | )(?P<message>.+)'
     multiline = False
     tempfile_suffix = 'jade'
