@@ -12,6 +12,7 @@
 
 from SublimeLinter.lint import NodeLinter, util, highlight
 
+
 class JadeLint(NodeLinter):
 
     """Provides an interface to jade-lint."""
