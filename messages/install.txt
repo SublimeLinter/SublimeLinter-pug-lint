@@ -1,10 +1,10 @@
-SublimeLinter-contrib-jade-lint
+SublimeLinter-contrib-pug-lint
 -------------------------------
-This linter plugin for SublimeLinter provides an interface to jade-lint.
+This linter plugin for SublimeLinter provides an interface to pug-lint.
 
 ** IMPORTANT! **
 
 Before this plugin will activate, you *must*
 follow the installation instructions here:
 
-https://github.com/benedfit/SublimeLinter-contrib-jade-lint
+https://github.com/benedfit/SublimeLinter-contrib-pug-lint

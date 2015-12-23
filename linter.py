@@ -8,26 +8,25 @@
 # License: MIT
 #
 
-"""This module exports the JadeLint plugin class."""
+"""This module exports the PugLint plugin class."""
 
 from SublimeLinter.lint import NodeLinter, util, highlight
 
 
-class JadeLint(NodeLinter):
+class PugLint(NodeLinter):
+    """Provides an interface to pug-lint."""
 
-    """Provides an interface to jade-lint."""
-
-    npm_name = 'jade-lint'
-    syntax = 'jade'
-    cmd = 'jade-lint @ *'
+    npm_name = 'pug-lint'
+    syntax = 'pug'
+    cmd = 'pug-lint @ *'
     executable = None
     version_args = '--version'
     version_re = r'(?P<version>\d+\.\d+\.\d+)'
-    version_requirement = '>= 2.0.0'
+    version_requirement = '>= 2.1.1'
     regex = r'^.+?:(?P<line>\d+)(:(?P<col>\d+) | )(?P<message>.+)'
     multiline = False
-    tempfile_suffix = 'jade'
+    tempfile_suffix = 'pug'
     error_stream = util.STREAM_BOTH
-    config_file = ('--config', '.jade-lintrc', '.jade-lint.json', '~')
+    config_file = ('--config', '.pug-lintrc', '.pug-lint.json', '.jade-lintrc', '.jade-lint.json', '~')
     defaults = {'--reporter=': 'inline'}
     default_type = highlight.WARNING
