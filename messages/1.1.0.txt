@@ -1,0 +1,7 @@
+** IMPORTANT! **
+
+Jade has been renamed Pug
+
+To reactivate this plugin, you *must* follow the latest installation instructions here:
+
+https://github.com/benedfit/SublimeLinter-contrib-pug-lint#linter-installation
