@@ -17,7 +17,7 @@ class PugLint(NodeLinter):
     """Provides an interface to pug-lint."""
 
     npm_name = 'pug-lint'
-    syntax = 'pug'
+    syntax = ('pug', 'jade')
     cmd = 'pug-lint @ *'
     executable = None
     version_args = '--version'
