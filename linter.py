@@ -17,7 +17,6 @@ class PugLint(NodeLinter):
     """Provides an interface to pug-lint."""
 
     npm_name = 'pug-lint'
-    syntax = ('pug', 'jade')
     cmd = 'pug-lint @ *'
     executable = None
     version_args = '--version'
@@ -28,5 +27,8 @@ class PugLint(NodeLinter):
     tempfile_suffix = 'pug'
     error_stream = util.STREAM_BOTH
     config_file = ('--config', '.pug-lintrc', '.pug-lint.json', '.jade-lintrc', '.jade-lint.json', '~')
-    defaults = {'--reporter=': 'inline'}
+    defaults = {
+        'selector': 'text.pug, source.pypug, text.jade',
+        '--reporter=': 'inline'
+    }
     default_type = highlight.WARNING
