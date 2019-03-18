@@ -1,0 +1,5 @@
+** IMPORTANT! **
+
+Move attribute to "selector" in defaults from "syntax", as suggested by SublimeLinter
+
+https://github.com/benedfit/SublimeLinter-contrib-pug-lint/commit/46ba4f97d3ad2d673e8f3acb86d8c75905bc319f
