@@ -10,13 +10,13 @@
 
 """This module exports the PugLint plugin class."""
 
-from SublimeLinter.lint import NodeLinter, util, highlight
+from SublimeLinter.lint import NodeLinter, WARNING
 
 
 class PugLint(NodeLinter):
     """Provides an interface to pug-lint."""
 
-    cmd = 'pug-lint @ *'
+    cmd = 'pug-lint ${temp_file} ${args}'
     regex = r'^.+?:(?P<line>\d+)(:(?P<col>\d+) | )(?P<message>.+)'
     multiline = False
     tempfile_suffix = 'pug'
@@ -25,4 +25,4 @@ class PugLint(NodeLinter):
         'selector': 'text.pug, source.pypug, text.jade',
         '--reporter=': 'inline'
     }
-    default_type = highlight.WARNING
+    default_type = WARNING
