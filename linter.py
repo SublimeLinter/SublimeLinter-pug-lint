@@ -18,11 +18,10 @@ class PugLint(NodeLinter):
 
     cmd = 'pug-lint ${temp_file} ${args}'
     regex = r'^.+?:(?P<line>\d+)(:(?P<col>\d+) | )(?P<message>.+)'
-    multiline = False
     on_stderr = None
     tempfile_suffix = 'pug'
     defaults = {
         'selector': 'text.pug, source.pypug, text.jade',
-        '--reporter=': 'inline'
+        '--reporter': 'inline'
     }
     default_type = WARNING
